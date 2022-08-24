@@ -1,0 +1,80 @@
+
+#top{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    border: 0px solid red;
+    background-color: aqua;
+}
+#trip{
+    background-color: aqua;   
+    border: 0px;
+    font-size: 18px;
+   
+}
+#allfun{
+    display: flex;
+   gap: 30px;
+
+}
+#S{
+    background-color: aqua;
+    border: 0px;
+    font-size: 18px;
+}
+#h1search{
+    font-size: 20px;
+   text-align: center;
+}
+/* #h1search>h1{
+
+} */
+#search{
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+/* 
+***************************************************
+second section all img */
+
+#allimgtopdiv{
+    width: 90%;
+    margin: auto;
+    border: 1px solid teal;
+    margin-top: 50px;
+}
+
+#firstimg{
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 150px;
+    border: 0px solid pink;
+    height: 400px;
+    width: auto;
+    margin: auto;
+    gap: 20px;
+}
+#imgh{
+   
+    width: 70%; 
+    /* height: 400px; */
+    border: 2px solid rgb(131, 0, 33);
+}
+#imgh>img{
+    width: 100%;
+
+}
+.secimg>img{
+    height: 250px;
+}
+#imgh>h1{
+    font-size: 20px;
+}
+#imgh>h3{
+    font-size: 20px;
+}
+.fourimg>img{
+    height: 200px; 
+}

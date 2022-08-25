@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./forum.css">
+</head>
+<body>
+   <form>
+    <h2 id="fir">Travel Forum</h2>
+    <p>Get answer & discussion from real Tripoto travelers</p>
+    <input type="text" placeholder="discussion from real Tripoto travelers">
+    <br><br>
+    <h1>Places to explore in Kashmir ?? want a 6 days package for kashmir .</h1>
+    <div id="fbox">
+    <h5>Like: <spam id="like"></spam></h5>
+    <h5>Dislike: <spam id="dislike"></spam></h5>
+</div>
+    <button onClick="likeFun1()">Like👍</button>
+    <button onClick="dislikeFun1()">Dislike👎</button>
+    <br><br>
+    <h1>What are some best road trips from Chennai?</h1>
+    <div id="fbox">
+    <h5>Like: <spam id="likef"></spam></h5>
+    <h5>Dislike: <spam id="Dislikef"></spam></h5>
+</div>
+    <button onClick="likeFun2()">Like👍</button>
+    <button onClick="dislikeFun2()">Dislike👎</button>
+
+    <br><br>
+    <h1>Which are the local veg food stuffs in ladakh?</h1>
+    <div id="fbox">
+    <h5>Like: <spam id="liket"></spam></h5>
+    <h5>Dislike: <spam id="Disliket"></spam></h5>
+</div>
+    <button onClick="likeFun3()">Like👍</button>
+    <button onClick="dislikeFun3()">Dislike👎</button>
+
+    <br><br>
+    <h1>I wanna visit Singapore in budget, can anyone help me with the itinary and places to stay in budget and cheapest flight hacks or any other tips. Is October month is good to visit there?
+    </h1>
+    <div id="fbox">
+    <h5>Like: <spam id="liket4"></spam></h5>
+    <h5>Dislike: <spam id="Disliket4"></spam></h5>
+</div>
+    <button onClick="likeFun4()">Like👍</button>
+    <button onClick="dislikeFun4()">Dislike👎</button>
+
+    <br><br>
+    <h1>I am planning o travel to Sweden.I'm searching for the best enjoy full thing o do when I start my journey in Sweden. Can anyone tell me what are the places that you know to travel in there what else can do for getting a enjoyable travel experience?</h1>
+    <div id="fbox">
+    <h5>Like: <spam id="liket5"></spam></h5>
+    <h5>Dislike: <spam id="Disliket5"></spam></h5>
+</div>
+    <button onClick="likeFun5()">Like👍</button>
+    <button onClick="dislikeFun5()">Dislike👎</button>
+
+    <br><br>
+    <h1>What is the top beauty of nature places to visit in Himachal Pradesh?</h1>
+    <div id="fbox">
+    <h5>Like: <spam id="liket6"></spam></h5>
+    <h5>Dislike: <spam id="Disliket6"></spam></h5>
+</div>
+    <button onClick="likeFun6()">Like👍</button>
+    <button onClick="dislikeFun6()">Dislike👎</button>
+   </form> 
+</body>
+</html>
+<script>
+    // *************** 1nd function start ****************
+let like_count1;
+    if(localStorage.getItem("disceiptionlike")==null){
+        like_count1=0;
+    }else{
+        like_count1 = localStorage.getItem("disceiptionlike")
+    }
+    document.querySelector("#like").innerText = like_count1;
+
+    function likeFun1() {
+    like_count1++;
+    document.querySelector("#like").innerText=like_count1;
+localStorage.setItem("disceiptionlike", like_count1);
+} 
+
+let dislike_count1;
+if(localStorage.getItem("disceiptiondis")==null){
+    dislike_count1=0;
+}else{
+    dislike_count1 = localStorage.getItem("disceiptiondis")
+}
+document.querySelector("#dislike").innerText = dislike_count1;
+
+function dislikeFun1(){
+    dislike_count1++;
+    document.querySelector("#dislike").innerText=dislike_count1;
+    localStorage.setItem("disceiptiondis",dislike_count1);
+}
+// *************** 2nd function start ****************
+
+let like_count2;
+    if(localStorage.getItem("disceiption")==null){
+        like_count2=0;
+    }else{
+        like_count2 = localStorage.getItem("disceiption");
+    }
+    document.querySelector("#likef").innerText = like_count2;
+
+    function likeFun2() {
+    like_count2++;
+    document.querySelector("#likef").innerText=like_count2;
+localStorage.setItem("disceiption", like_count2);
+} 
+
+let dislike_count2;
+if(localStorage.getItem("disceiptiond")==null){
+    dislike_count2=0;
+}else{
+    dislike_count2 = localStorage.getItem("disceiptiond");
+}
+document.querySelector("#Dislikef").innerText = dislike_count2;
+
+function dislikeFun2(){
+    dislike_count2++;
+    document.querySelector("#Dislikef").innerText=dislike_count2;
+    localStorage.setItem("disceiptiond",dislike_count2);
+}
+ // *************** 3nd function start ****************
+ if(localStorage.getItem("disceiptiont")==null){
+    like_count3=0;
+ }else{
+    like_count3 = localStorage.getItem("disceiptiont");
+ }
+ document.querySelector("#liket").innerText = like_count3;
+
+ function likeFun3(){
+    like_count3++;
+    document.querySelector("#liket").innerText = like_count3;
+    localStorage.setItem("disceiptiont", like_count3);
+ }
+
+ let dislike_count3;
+ if(document.querySelector("#Disliket")==null){
+    count_dislike3=0;
+ }else{
+    dislike_count3 = localStorage.getItem("disceiptiontd");
+ }
+document.querySelector("#Disliket").innerText = dislike_count3;
+
+function dislikeFun3(){
+    dislike_count3++;
+    document.querySelector("#Disliket").innerText =  dislike_count3;
+    localStorage.setItem("disceiptiontd",dislike_count3);
+}
+ // *************** 4nd function start ****************
+let like_count4;
+ if(localStorage.getItem("disceiptiontm")==null){
+    like_count4=0;
+ }else{
+    like_count4 = localStorage.getItem("disceiptiontm");
+ }
+ document.querySelector("#liket4").innerText = like_count4;
+
+ function likeFun4(){
+    like_count4++;
+    document.querySelector("#liket4").innerText = like_count4;
+    localStorage.setItem("disceiptiontm", like_count4);
+ }
+
+ let dislike_count4;
+ if(document.querySelector("#Disliket4")==null){
+    count_dislike4=0;
+ }else{
+    dislike_count4 = localStorage.getItem("disceiptiontdm");
+ }
+document.querySelector("#Disliket4").innerText = dislike_count4;
+
+function dislikeFun4(){
+    dislike_count4++;
+    document.querySelector("#Disliket4").innerText =  dislike_count4;
+    localStorage.setItem("disceiptiontdm",dislike_count4);
+}
+  // *************** 5nd function start ****************
+  let like_count5;
+ if(localStorage.getItem("disceiptiontlfi")==null){
+    like_count5=0;
+ }else{
+    like_count5 = localStorage.getItem("disceiptiontlfi");
+ }
+ document.querySelector("#liket5").innerText = like_count5;
+
+ function likeFun5(){
+    like_count5++;
+    document.querySelector("#liket5").innerText = like_count5;
+    localStorage.setItem("disceiptiontlfi", like_count5);
+ }
+
+ let dislike_count5;
+ if(document.querySelector("#Disliket5")==null){
+    count_dislike5=0;
+ }else{
+    dislike_count5 = localStorage.getItem("disceiptiontdml");
+ }
+document.querySelector("#Disliket5").innerText = dislike_count5;
+
+function dislikeFun5(){
+    dislike_count5++;
+    document.querySelector("#Disliket6").innerText =  dislike_count5;
+    localStorage.setItem("disceiptiontdml",dislike_count5);
+}
+   // *************** 6nd function start ****************
+   
+   let like_count6;
+ if(localStorage.getItem("disceiptiontl")==null){
+    like_count6=0;
+ }else{
+    like_count6 = localStorage.getItem("disceiptiontl");
+ }
+ document.querySelector("#liket6").innerText = like_count6;
+
+ function likeFun6(){
+    like_count6++;
+    document.querySelector("#liket6").innerText = like_count6;
+    localStorage.setItem("disceiptiontl", like_count6);
+ }
+
+ let dislike_count6;
+ if(document.querySelector("#Disliket6")==null){
+    count_dislike6=0;
+ }else{
+    dislike_count6 = localStorage.getItem("disceiptiontdml");
+ }
+document.querySelector("#Disliket6").innerText = dislike_count6;
+
+function dislikeFun6(){
+    dislike_count6++;
+    document.querySelector("#Disliket6").innerText =  dislike_count6;
+    localStorage.setItem("disceiptiontdml",dislike_count6);
+}
+</script>
+

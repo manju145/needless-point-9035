@@ -1,4 +1,6 @@
-
+#subtop{
+    width: 100%;
+}
 #top{
     display: flex;
     height: 50px;
@@ -77,4 +79,11 @@ second section all img */
 }
 .fourimg>img{
     height: 200px; 
+}
+#bottomimg{
+text-align: center;
+margin-top: 5%;
+}
+.kl>img{
+ height: 200px;
 }

@@ -1,0 +1,22 @@
+
+body>div{
+    width: 90%; 
+    height: 500px;
+    margin-left: 20%;
+    /* margin:auto ; */
+ }
+ #picfor>img{
+     width: 60%;
+ }
+ #picfor>p{
+     width: 70%;
+     font-size: 24px;
+ }
+ #picfor>h1{
+    width: 70%;
+     font-size: 26px;
+ }
+ #picfor>h4{
+    width: 70%;
+     font-size: 26px;
+ }

@@ -191,4 +191,197 @@ body{
       .fourimgpa>img{
         height: 250px; 
       }
-      
+      body{
+margin: 0px;
+}
+#subtop{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(251, 223, 43);
+}
+#top{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    border: 0px solid red;
+    background-color: aqua;
+}
+#trip{
+    background-color: aqua;   
+    border: 0px;
+    font-size: 18px;
+   
+}
+#allfun{
+    display: flex;
+   gap: 30px;
+
+}
+#S{
+    background-color: aqua;
+    border: 0px;
+    font-size: 18px;
+}
+#h1search{
+    font-size: 20px;
+   text-align: center;
+}
+#search{
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+/* 
+***************************************************
+second section all img */
+
+#allimgtopdiv{
+    width: 90%;
+    margin: auto;
+    border: 0px solid teal;
+    margin-top: 50px;
+}
+
+#firstimg{
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 150px;
+    border: 0px solid pink;
+    height: 450px;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+}
+#imgh{
+   
+    width: 70%; 
+    border: 0px solid rgb(131, 0, 33);
+}
+#imgh>img{
+    width: 100%;
+
+}
+.secimg>img{
+    height: 250px;
+}
+#imgh>h1{
+    font-size: 20px;
+}
+#imgh>h3{
+    font-size: 20px;
+}
+.fourimg>img{
+    height: 200px; 
+}
+#bottomimg{
+text-align: center;
+margin-top: 5%;
+}
+.kl>img{
+ height: 200px;
+}
+#firstimgpri{
+    display: flex;
+    border: 0px solid red;
+    height: 450px;
+    width: 100%;
+    gap: 20px;
+    margin: auto;
+}
+
+#priceim{
+    width: 90%;
+    margin: auto;
+   border: 0px solid teal;
+margin-top: 5px;
+}
+#pricesecond{
+    width: 90%;
+    margin: auto;
+   border: 0px solid teal;
+margin-top: 30px;
+}
+#firstimgsec{
+    display: flex;
+    border: 0px solid red;
+    height: 350px;
+    width: 100%;
+    gap: 20px;
+    margin: auto; 
+}
+#towbox{
+    display: flex;
+    width: 95%;
+    background-color: rgb(245, 251, 251);
+    border: 0px solid rgb(183, 168, 168);
+    gap: 20px;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+.boxs{
+  display: flex;
+  justify-content: center;
+    width: 68%; 
+    height: 300px;
+    border: 0px solid rgb(226, 220, 203);
+    gap: 72px;
+    
+}
+#alltag{
+display: grid;
+font-size: 20px;
+}
+
+
+.boxf{
+    justify-content: flex-start;
+    align-items: flex-start;
+      width: 30%; 
+      height: 300px;
+      border: 0px solid rgb(226, 220, 203);
+      margin-top: 2%;
+      font-size: 12px;
+  }
+  .first{
+    border: 0px;
+    background-color: aqua;
+  }
+  .tri{
+    font-size: 35px;
+    background-color: rgb(245, 251, 251);
+    border: 0px;
+    width: 40%;
+    height: 50px;
+  }
+  #allsym{
+       margin-left: 5%;
+    
+  }
+  #allsym>a>img{
+    width: 5%;
+    
+  }
+ #google>a>img{
+      width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+ }
+ .boxs{
+    font-size: 150px;
+ }
+ .firstpa>img{
+    width: 60%;
+    height: 250px;
+ }
+ .secimgpa>img{
+   height: 250px; 
+ }
+ .klpa>img{
+    height: 250px; 
+  }
+  .fourimgpa>img{
+    height: 250px; 
+  }
+

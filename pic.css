@@ -1,3 +1,22 @@
+body>div{
+    width: 70%; 
+    height: 500px;
+    margin:auto ;
+ }
+ #allpic>img{
+     width: 90%;
+ }
+ #allpic>p{
+     width: 90%;
+     font-size: 24px;
+ }
+ #allpic>h1{
+     font-size: 26px;
+ }
+#allpic{
+   width: 70%; 
+   height: 500px;
+   margin:auto ;
 #allpic{
   width: 70%;
  margin:auto ;
@@ -36,6 +55,9 @@ font-size: 24px;
 display: grid;
 font-size: 20px;
 }
+#allpic>h1{
+    font-size: 26px;
+}
 
 
 .boxf{
@@ -70,3 +92,4 @@ font-size: 20px;
  .boxs{
     font-size: 150px;
  }
+

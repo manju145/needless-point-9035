@@ -15,24 +15,28 @@
         }
 #box{
     display: grid;
+    height: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,40px);
     width: 20%;
- 
+    border: 10px solid red;
     margin: auto;
     justify-content: center;
- 
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 form>label{
+    display: flex;
       font-size: 25px;
     padding-left: 75px;
-      
+      margin: auto;
 }
 form>input{
+    display: flex;
     text-align: center;
     font-size: 20px;
        height: 40px;
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    margin: auto;
 }
 #sign{
     display: flex;
@@ -73,6 +77,6 @@ function opensign(){
     let password=document.forms["myForm"]["passcod"].Value;
  
      window.location.href="./home.html";
-     alert("susss in");
+     alert("successfully Sign");
    }
    </script> 

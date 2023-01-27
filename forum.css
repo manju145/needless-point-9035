@@ -1,4 +1,29 @@
 
+#top{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  border: 0px solid red;
+  background-color: aqua;
+}
+#trip{
+  background-color: aqua;   
+  border: 0px;
+  font-size: 18px;
+ 
+}
+#allfun{
+  display: flex;
+ gap: 30px;
+
+}
+#S{
+  background-color: aqua;
+  border: 0px;
+  font-size: 18px;
+}
+
+/* ***************************************************************** */
 
 form>p{
     font-size: 18px;

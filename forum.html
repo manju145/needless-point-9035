@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="./forum.css">
 </head>
 <body>
+    <form name="myHome" method="post">
+        <div id="subtop">
+          <div id="top">
+            <input type="button" name="" id="S" class="first" value="🌎tripoto" onClick="tribot()"/>  
+            <div id="allfun">
+        
+            <button onClick="Inspira()" id="S" class="Ins">Inspiration</button>
+            <input type="button" name="foru" id="S" class="For" value="Forum" onClick="Forum()">
+            <button onClick="Pack()"  id="S" class="Pac">Packages</button>
+            <button onClick="Public()"  id="S" class="Pub">Public Trip</button>
+            <input type="button" name="olp" id="S" class="Sig" value="Signin" onClick="Sign()">
+            </div>
+          </div>
+        
+               </form>
    <form>
     <h2 id="fir">Travel Forum</h2>
     <p>Get answer & discussion from real Tripoto travelers</p>
@@ -309,6 +324,26 @@ function dislikeFun6(){
     dislike_count6++;
     document.querySelector("#Disliket6").innerText =  dislike_count6;
     localStorage.setItem("disceiptiontdml",dislike_count6);
+}
+
+function Sign(){
+    window.location.href="./login.html";
+     alert("Open");
+}
+
+function Forum(){
+    window.location.href="./forum.html";
+}
+
+function tribot(){
+    window.location.href="./home.html";
+}
+
+function Pack(){
+    window.location.href="./pic.html";
+}
+function Public(){
+    window.location.href="./picfor.html";
 }
 </script>
 

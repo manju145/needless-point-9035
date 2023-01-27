@@ -17,8 +17,8 @@
 
     <button onClick="Inspira()" id="S" class="Ins">Inspiration</button>
     <input type="button" name="foru" id="S" class="For" value="Forum" onClick="Forum()">
-    <button onClick="Pack()"  id="S" class="Pac">Packages</button>
-    <button onClick="Public()"  id="S" class="Pub">Public Trip</button>
+    <button type="button" onClick="Pack()"  id="S" class="Pac">Packages</button>
+    <button type="button" onClick="Public()"   id="S" class="Pub">Public Trip</button>
     <input type="button" name="olp" id="S" class="Sig" value="Signin" onClick="Sign()">
     </div>
   </div>
@@ -230,7 +230,7 @@
     </div>
     </div>
 
-    <!-- tooter part -->
+    <!-- footer part -->
 
     <div id="towbox">
         <div class="boxf">
@@ -307,33 +307,39 @@
 <script>
 
 function Sign(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/login.html";
+    window.location.href="./login.html";
      alert("Open");
 }
-
+function Pack(){
+    window.location.href="./pic.html";
+}
+function Public(){
+    window.location.href="./picfor.html";
+}
 function Forum(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/forum.html?";
+    window.location.href="./forum.html";
 }
 
 function tribot(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/home.html";
+    window.location.href="./home.html";
 }
 
 function nexsic(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/pic.html";
+    window.location.href="./pic.html";
 }
 function nexsicsec(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/picfor.html";
+    window.location.href="./picfor.html";
 }
 function nexsictr(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/picfor.html";
+    window.location.href="./picfor.html";
 }
 function nexsicfor(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/picfor.html";
+    window.location.href="./picfor.html";
 }
 function secpic(){
-    window.location.href="http://127.0.0.1:5500/needless-point-9035/secpic.html";
+    window.location.href="./secpic.html";
 }
+
 
 </script>
 

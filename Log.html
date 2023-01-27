@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #outer{
+    width: 25%;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+#inner{
+    width: 85%;
+    margin: auto;
+}
+#facebookBtn{
+    background-color: #4a66a0;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+#form>button{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;    
+    display: block;
+    border: white;
+    border-radius: 5px;
+}
+#form>button:hover{
+    cursor: pointer;
+}
+#or{
+    text-align: center;
+    color: grey;
+}
+#form>input{
+    width: 92%;
+    margin-top: 15px;
+    padding: 10px;
+}
+#loginBtn{
+    border: #f27669;
+    background-color: #f27669;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+#signupBtn{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <form id="form">
+                <button id="facebookBtn">Log in with Facebook</button>
+                <button>Log in with Google</button>
+                <h4 id="or">OR</h4>
+                <input type="text" id="loginEmail" placeholder="Email">
+                <input type="numbert" id="loginPassword" placeholder="Password">
+                <button id="loginBtn" >LOG IN</button>
+                <P id="signupBtn">Don't have an account? <a href="./login.html">Sign Up</a></P>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let loginForm = document.querySelector("form");
+let login = false;
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
+
+loginForm.addEventListener("submit",(event)=>{
+    event.preventDefault();
+
+    let data = {
+        email: loginForm.loginEmail.value,
+        password: loginForm.loginPassword.value,
+    }
+    if(checkLogin(data.email, data.password)==true){
+        localStorage.setItem("signin",JSON.stringify(data));
+        alert("Login Successfull");
+              localStorage.setItem("login",JSON.stringify(true));
+        // window.location.href = ""
+        window.location.href="./Home.html";
+    }
+    else{
+        alert("Wrong Email or Password");
+        localStorage.setItem("login",JSON.stringify(false));
+    }
+})
+
+let checkLogin = (email,password)=>{
+    let filteredEmailPass = userData.filter((ele)=>{
+        return ele.email == email && ele.Password == password;
+    })
+    if(filteredEmailPass.length>0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+// function Login(){
+//     window.location.href="./Home.html";
+// }
+</script>

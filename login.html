@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,4 +79,128 @@ function opensign(){
      window.location.href="./home.html";
      alert("successfully Sign");
    }
-   </script> 
+   </script>  -->
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./signup.css">
+    <style>
+        
+#container{
+    width: 25%;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: auto;
+}
+#inner_box{
+    width: 85%;
+    margin: auto;
+}
+#facebook_btn{
+    background-color: #4a66a0;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+#inner_box>button{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;    
+    display: block;
+    border: white;
+    border-radius: 5px;
+}
+#inner_box>button:hover{
+    cursor: pointer;
+}
+#or{
+    text-align: center;
+    color: grey;
+}
+#inner_box>input{
+    width: 92%;
+    margin-top: 15px;
+    padding: 10px;
+}
+#signup_btn{
+    border: #f27669;
+    background-color: #f27669;
+    color: white;
+    display: block;
+    text-align: center;
+}
+#loginBtn{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form id="inner_box">
+            <button id="facebook_btn">Sign up with Facebook</button>
+            <button>Sign up with Google</button>
+            <h4 id="or">OR</h4>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="numbert" id="password" placeholder="Password">
+            <p>India (+91)</p>
+            <input type="number" id="phone" placeholder="Enter Phone no">
+            <p>Subscribe to the newsletter</p>
+            <button id="signup_btn" onclick="Sign()">SIGN UP</button>
+            <p>By signing up, you agree to Tripoto's terms and conditions and privancy policy</p>
+            <p id="loginBtn">Already registered? <a href="./Log.html">Log in</a></p>
+        </form>
+    </div>
+    <!-- <h1></h1> -->
+</body>
+</html>
+<script>
+
+let form = document.querySelector("form");
+
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
+
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+
+    let data = {
+        Name: form.name.value,
+        email: form.email.value,
+        Password: form.password.value,
+        Phone_No: form.phone.value
+    }
+    if(checkEmail(data.email)==true){
+        userData.push(data);
+        alert("Registration Successfull")
+        window.location.href="./Home.html";
+        localStorage.setItem("userData",JSON.stringify(userData));
+        
+    }
+    else{
+    
+        alert("Account Already Exists");
+    }
+})
+
+let checkEmail = (email)=>{
+    let filteredEmail = userData.filter((ele)=>{
+        return email == ele.email;
+    })
+    if(filteredEmail.length>0){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+// function Sign(){
+//     window.location.href="./Home.html";
+// }
+</script>

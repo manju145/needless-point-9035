@@ -2,12 +2,10 @@ Getting Started with Create React App
 
 Landing Page
 ![image](https://user-images.githubusercontent.com/110039298/215248238-8978c791-851b-4674-8b7b-84a4e0b97080.png)
-![image](https://user-images.githubusercontent.com/110039298/215243412-4d6a0854-9fff-4c31-9231-f415899ae92a.png)
 ![image](https://user-images.githubusercontent.com/110039298/215248337-7851e01e-b36b-40b8-8654-662b40d475ae.png)
 ![image](https://user-images.githubusercontent.com/110039298/215248355-2887f238-d7c5-4a1f-9897-17aa69cd7246.png)
 ![image](https://user-images.githubusercontent.com/110039298/215248369-576e8127-a311-4c1a-a69a-8185faa47387.png)
 ![image](https://user-images.githubusercontent.com/110039298/215248377-1241d5d1-2588-4884-b4f2-17f774927bd2.png)
-
 ![image](https://user-images.githubusercontent.com/110039298/215243480-f5af434b-60f8-400f-981f-3d8e1790efd8.png)
 ![image](https://user-images.githubusercontent.com/110039298/215243497-88b76909-59c2-467d-995d-3f1b2acc4f3d.png)
 ![image](https://user-images.githubusercontent.com/110039298/215243514-ecb55108-6158-4ace-bb0a-75b576cff2ee.png)

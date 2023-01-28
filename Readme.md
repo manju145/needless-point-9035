@@ -1,4 +1,4 @@
-Getting Started with Create React App
+Tripoto 
 
 Landing Page
 ![image](https://user-images.githubusercontent.com/110039298/215248238-8978c791-851b-4674-8b7b-84a4e0b97080.png)
